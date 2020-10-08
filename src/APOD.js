@@ -25,6 +25,9 @@ export default function APOD(props) {
     return (
         <div className="picAPOD">
             <img src={dataAPOD.url} alt="APOD"></img>
+            <h2>{dataAPOD.title}</h2>
+            <p>copyright: {dataAPOD.copyright}, date: {dataAPOD.date}</p>
+            <p>{dataAPOD.explanation}</p>
         </div>
     )
 }
