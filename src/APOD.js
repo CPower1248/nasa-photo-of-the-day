@@ -7,18 +7,19 @@ export default function APOD(props) {
     const { dataAPOD, setDataAPOD } = props;
     useEffect(() => {
         const fetchAPOD = () => {
-            axios.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
+            axios.get("https://api.nasa.gov/planetary/apod?api_key=io07wwxX70UZCHzpMvr7i9IQhGug6lw2GjwiZagb")
                 .then(res => {
-                    debugger
-                    setDataAPOD(res.data)
+                    // debugger
                     console.log(res)
+                    setDataAPOD(res.data)
                 })
                 .catch(err => {
-                    debugger
+                    // debugger
                     console.log(err)
                 })
         }
         fetchAPOD()
+// eslint-disable-next-line
     },[])
 
     return (
@@ -27,3 +28,4 @@ export default function APOD(props) {
         </div>
     )
 }
+//BASE_URL+API_KEY: https://api.nasa.gov/planetary/apod?api_key=io07wwxX70UZCHzpMvr7i9IQhGug6lw2GjwiZagb
