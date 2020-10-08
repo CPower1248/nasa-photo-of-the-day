@@ -8,10 +8,6 @@ function App() {
   const [ dataAPOD, setDataAPOD ] = useState({})
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
       <Title />
       <APOD dataAPOD={dataAPOD} setDataAPOD={setDataAPOD} />
       <Button />
